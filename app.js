@@ -57,25 +57,13 @@ switch (birthMonth.toLowerCase()) {
 
 // Exercise 3: Business Logic between Apparell Coders
 
-let typeId = "02";
+let typeId = "01";
 let colorId = "PU";
 let sizeId = "L";
 
 let type = "";
 let color = "";
 let size = "";
-
-if (typeId == "01") {
-  type = "Tank Top";
-} else if (typeId == "02") {
-  type = "T-Shirt";
-} else if (typeId == "03") {
-  type = "Long Sleeve";
-} else if (typeId == "04") {
-  type == "Sweat Shirt";
-} else {
-  type = "Other";
-}
 
 switch (typeId) {
   case "01":
@@ -94,61 +82,37 @@ switch (typeId) {
     type = "Other";
 }
 
-if (colorId == "BL") {
-  color = "Black";
-} else if (colorId == "BU") {
-  color = "Blue";
-} else if (colorId == "RD") {
-  color = "Red";
-} else if (colorId == "PU") {
-  color = "Purple";
-} else {
-  color = "White";
-}
-
 switch (colorId) {
   case "BL":
-    type = "Black";
+    color = "Black";
     break;
   case "BU":
-    type = "Blue";
+    color = "Blue";
     break;
   case "RD":
-    type = "Red";
+    color = "Red";
     break;
   case "PU":
-    type = "Purple";
+    color = "Purple";
     break;  
   default:
-    type = "White";
+    color = "White";
 }
 
-if (sizeId == "S") {
-  size = "Small";
-} else if (sizeId == "M") {
-  size = "Medium";
-} else if (sizeId == "L") {
-  size = "Large";
-} else if (sizeId == "XL") {
-  size = "Extra Large";
-} else {
-  size = "One Size Fits All";
-}
-
-switch (typeId) {
+switch (sizeId) {
   case "S":
-    type = "Small";
+    size = "Small";
     break;
   case "M":
-    type = "Medium";
+    size = "Medium";
     break;
   case "L":
-    type = "Large";
+    size = "Large";
     break;
   case "XL":
-    type = "Extra Large";
+    size = "Extra Large";
     break;
   default:
-    type = "One Size Fits All";
+    size = "One Size Fits All";
 }
 console.log(`Product: ${size} ${color} ${type}`)
